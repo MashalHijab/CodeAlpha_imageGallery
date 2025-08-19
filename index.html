@@ -273,7 +273,7 @@
                 const originalPrice = `$${product.price}`;
                 const salePrice = `$${(product.price * 0.8).toFixed(2)}`;
                 div.innerHTML = `
-                    <img src="images/${product.img}" alt="${product.name}" />
+                    <img src="${product.img}" alt="${product.name}" />
                     <h5>${product.name}</h5>
                     <div class="price">
                         ${product.onSale ? `<del class="text-secondary">${originalPrice}</del> <strong class="text-danger">${salePrice}</strong>` : `<strong>${originalPrice}</strong>`}
@@ -296,7 +296,7 @@
                 const originalPrice = `$${product.price}`;
                 const salePrice = `$${(product.price * 0.8).toFixed(2)}`;
                 div.innerHTML = `
-                    <img src="images/${product.img}" alt="${product.name}" />
+                    <img src="${product.img}" alt="${product.name}" />
                     <h5>${product.name}</h5>
                     <div class="price">
                         ${product.onSale ? `<del class="text-secondary">${originalPrice}</del> <strong class="text-danger">${salePrice}</strong>` : `<strong>${originalPrice}</strong>`}
